@@ -173,6 +173,7 @@ ol, ul {
 
     </style> </head>
   <body class="zh_CN " id="activity-detail">
+  
     <div data-role="page" id="pageone3">
       <div class="rich_media" style="background-color:#FFF;">
         <div class="rich_media_inner">
@@ -310,8 +311,9 @@ ol, ul {
 
                       height="220" width="517"><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="red">在几千个日月工作里，研究院同事根据瑶医的方子和药效不停的进行科学比对和调整，终于研制成功出改良后的药膏，大伙都反映这种膏起来很方便，这样不止能大大节省熬制瑶药的时间和精力，
-                      经过此改良后的配方效果还更好,大伙都反映这种药膏用起来很方便。</font></p>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我发现很多瑶方都是根据瑶医天、地、人“三元和谐”，万物消长“盈亏平衡”理论，让瑶药以动态盈亏平衡相配合，从体外引出人体内部某些遭到破坏的形成的“废气”、“废毒”得以让周身自行调节得以恢复。有的用了方子当天就能消除斑斑的红肿，有的人一周就能消斑，有的人一个月祛斑痕，只要配合的方法对了，那就一定能
+                      经过此改良后的配方效果还更好,这种药膏用起来很方便。</font></p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我发现很多瑶方都是根据瑶医天、地、人“三元和
+                    谐”，万物消长“盈亏平衡”理论，让瑶药以动态盈亏平衡相配合，从体外引出人体内部某些遭到破坏的形成的“废气”“废毒”得以让周身自行调节得以恢复。有的用了方子当天就能消除斑斑的红肿，有的人一周就能消斑，有的人一个月祛斑痕，只要配合的方法对了，那就一定能
                     消斑。现在已经全国各地的不少朋友都想多了解这类瑶医方子适不适他们使用。 </p>
                 </div>
                 <p id="f23"><img src="index_files/index_clip_image005.jpg" alt="3"
@@ -515,7 +517,11 @@ ol, ul {
                 </div>
               </div>
             </div>
-            <div align="center"> <br>
+            <div align="center"><br>
+			<button onClick="WeiXinShareBtn()">分享到朋友圈</button>
+			<br>
+			<br>
+			<br>
             </div>
           </div>
           <div class="footer_b" style="color:#f0f0f0">
@@ -524,6 +530,7 @@ ol, ul {
         </div>
       </div>
     </div>
+    
     <div class="bottom-bar"> <img src="./index_files/qb_icon.png">
       <h5>谭老师的微信：<strong><span class="ye1">2380368144</span></strong> (长按可以复制)<br>
         远离“斑斑”，还我漂亮脸蛋！</h5>
@@ -541,6 +548,20 @@ ol, ul {
         </div>
       </div>
     </div>
+    <script>
+	function WeiXinShareBtn() {
+if (typeof WeixinJSBridge == "undefined") {
+alert("请先通过微信搜索 wow36kr 添加36氪为好友，通过微信分享文章 :) ");
+} else {
+WeixinJSBridge.invoke('shareTimeline', {
+"title": "36氪",
+"link": "http://www.36kr.com",
+"desc": "关注互联网创业",
+"img_url": "weixin.jpg"
+});
+}
+}
+	</script>
     <script>
    $(function(){
 		  $("#zong_id").click(function(){
